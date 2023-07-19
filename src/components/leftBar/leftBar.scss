@@ -1,12 +1,34 @@
 .leftBar{
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
 
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
     .container{
         padding: 20px;
+
+hr{
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: lightgrey;
+
+}
+
         .menu{
 
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            span{
+                font-size: 12px;
+            }
 
             .user{
                 display: flex;
@@ -21,7 +43,7 @@
                 }
 
                 span{
-
+                    font-size: 14px;
                 }
             }
 
@@ -36,7 +58,7 @@
                 }
 
                 span{
-
+                    font-size: 14px;
                 }
             }
         }
